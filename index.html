@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio form</title>
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>freeCodeCampSurvey Form</h1>
+      <p>Thank you for talking the time to help us improve the plataform</p>
+    </header>
+    <form action="cadastro.php" method="post" autocomplete="on">
+      <div class="controleform">
+        <label for="iname">Name</label>
+        <input type="text" name="nome" id="iname" class="controleinput" placeholder="Enter your name" required>
+      </div>
+      <div class="controleform">
+        <label for="iemail">Email </label>
+        <input type="email" name="email" id="iemail" placeholder="Enter your email" class="controleinput" required>
+      </div>
+      <div class="controleform">
+        <label for="iage">Age</label>
+        <input type="number" name="age" id="iage" min="10" max="99" class="controleinput" placeholder="age">
+      </div>
+      <div class="controleform">
+        <p>Would you recommend freeCodeCampSurvey to a friend?</p>
+        <select name="recommend" id="irecommend" class="controleinput" required>
+          <option disabled selected value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full time job</option>
+          <option value="learn">Full time lern</option>
+          <option value="notsay">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="controleform">
+        <p>Would your recommend freeCodeCampSurvey to a friend?</p>
+         <label for=""><input name="user-recomend" value="definitely" type="radio" class="inputradio" checked>
+          Definitely
+        </label>
+        <label for=""><input name="user-recomend" value="maybe" type="radio" class="inputradio">
+          Maybe
+        </label>
+        <label for=""><input name="user-recomend" value="not-sure" type="radio" class="inputradio">
+          Not sure
+        </label>
+      </div>
+      <div class="controleform">
+        <p>What is your favorite freature of freeCodeCamp?</p>
+        <select name="favoritefreature" id="ifreature" class="controleinput" required>
+          <option disabled selected value="">Select an option</option>
+          <option value="challanges">Chalenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="opensource">Open Source</option>
+        </select>
+      </div>
+
+      <div class="controleform">
+        <p>What Would you like to see improved
+          <span class="clue">(Check all that apply)</span>
+        </p>
+        <label for="iprefer"><input type="checkbox" name="prefer" value="front-end-projects"  class="inputcheck-box">
+          Front-end Projects
+        </label>
+        <label for="iprefer"><input type="checkbox" name="prefer" value="back-end-projects"  class="inputcheck-box">
+          Back-end Projects
+        </label>
+        <label for="iprefer"><input type="checkbox" name="prefer" value="data-visualization"  class="inputcheck-box">
+          Data visualization
+        </label>
+        <label for="iprefer"><input type="checkbox" name="prefer" value="challanges" class="inputcheck-box">
+          Challenges
+        </label>
+        <label for="iprefer"><input type="checkbox" name="prefer" value="open-source-community" class="inputcheck-box">
+          Open Source community
+        </label>
+        <label for="iprefer"><input type="checkbox" name="prefer" value="gitter-help-roms" class="inputcheck-box">
+          Gitter help roms
+        </label>
+        <label for="iprefer"><input type="checkbox" name="prefer" value="videos"  class="inputcheck-box">
+          Videos
+        </label>
+        <label for="iprefer"><input type="checkbox" name="prefer" value="city-meetups"  class="inputcheck-box">
+          City Meetups
+        </label>
+        <label for="iprefer"><input type="checkbox" name="prefer" value="Wiki" class="inputcheck-box">
+          Wiki
+        </label>
+        <label for="iprefer"><input type="checkbox" name="prefer" value="forum"  class="inputcheck-box">
+          Forum
+        </label>
+        <label for="iprefer"><input type="checkbox" name="prefer" value="add-courses" class="inputcheck-box">
+          Additional courses
+        </label>
+      </div>
+      <div class="controleform">
+        <p>Any comments or suggestions?</p>
+        <textarea name="suggestions" id="comments" cols="30" rows="10" placeholder="Enter your comment here" class="input-textarea"></textarea>
+      </div>
+      <div class="controleform">
+        <input type="submit" value="Submit" class="controleinput" id="botao-submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
