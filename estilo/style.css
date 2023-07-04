@@ -30,6 +30,7 @@ form{
   border-radius: 5px;
   padding: 25px;
   height: 100%;
+  max-width: 100%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.549);
   color: white;
 }
