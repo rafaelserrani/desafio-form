@@ -21,7 +21,7 @@ body{
 .container{
   min-width: 320px;
   max-width: 481px;
-  margin: auto;
+  margin: 20px auto 0 auto;
 }
 
 form{
