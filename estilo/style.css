@@ -25,7 +25,7 @@ body{
 }
 
 form{
-  margin: auto;
+  /*margin: auto;*/
   background-color: rgba(0, 0, 0, 0.493);
   border-radius: 5px;
   padding: 25px;
