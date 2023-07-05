@@ -93,15 +93,18 @@ label{
   transition: 1s;
 }
 
-@media (min-width: 576px){
+@media screen and (min-width: 481px) and (max-width: 768px){
   .container{
-    max-width: 540px;
-}
+    min-width: 481px;
+  }
 }
 
-@media (min-width: 768px){
+  
+
+
+@media screen and (min-width: 769px){
   .container{
-    max-width: 720px;
+    min-width: 720px;
   }
   
 }
