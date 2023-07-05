@@ -19,9 +19,9 @@ body{
 }
 
 .container{
-  min-width: 320px;
-  max-width: 481px;
-  margin: 20px auto 0 auto;
+  width: 100%;
+  margin: auto;
+
 }
 
 form{
@@ -95,7 +95,7 @@ label{
 
 @media screen and (min-width: 481px) and (max-width: 768px){
   .container{
-    min-width: 481px;
+    max-width: 481px;
   }
 }
 
@@ -104,7 +104,7 @@ label{
 
 @media screen and (min-width: 769px){
   .container{
-    min-width: 720px;
+    max-width: 720px;
   }
   
 }
